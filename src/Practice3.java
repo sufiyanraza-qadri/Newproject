@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Practice3 {
+    public static void main(String[] args){
+
+       Scanner scanner = new Scanner(System.in);
+//        int n=scanner.nextInt();
+//        for(int  num=1;num<=n;num+=1){
+//            System.out.println(num+"");
+//
+//        }
+//        int  num=4;
+//        while(num<=5){
+//            System.out.println(num);
+//            num+=1;
+//
+//        }
+        double radius;
+        double circumference;
+        double area;
+        double volume;
+
+        System.out.print("Enter the Radius: ");
+        radius=scanner.nextDouble();
+
+        circumference=2*Math.PI*radius;
+        area=Math.PI*Math.pow(radius,2);
+        volume=4.0/3.0*Math.PI*Math.pow(radius,3);
+
+
+        System.out.printf("The circumference is %.1fcm\n",circumference);
+        System.out.printf("The area is %.1fcm²\n",area);
+        System.out.printf("The volume is %.1fcm³\n",volume);
+
+
+
+
+    }
+}
